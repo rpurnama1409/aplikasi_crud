@@ -8,7 +8,7 @@ class Mahasiswa extends CI_Controller {
 
 		$data = ['data_mahasiswa' => $this->DataMahasiswaModel->getDataMahasiswa()];
 
-		$this->load->view('mahasiswa',$data);
+		$this->load->view('vw-mahasiswa',$data);
 	}
 
 	public function simpan(){
@@ -41,7 +41,7 @@ class Mahasiswa extends CI_Controller {
 		$data = ['data_mahasiswa' => $this->DataMahasiswaModel->getDataMahasiswa(),
 				 'data_edit' => $this->DataMahasiswaModel->getDataEdit($id)];
 
-		$this->load->view('mahasiswa',$data);
+		$this->load->view('vw-mahasiswa',$data);
 	}
 
 	public function hapus($id){
